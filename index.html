@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaFe Millennium - PRESSATRICE 1525 SLIM | Vendita Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a3a52;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .header-contact a {
+            color: #0096cc;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .header-contact a:hover {
+            color: #005a8d;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5aa0 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero-highlight {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #00c8ff;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        .hero-highlight strong {
+            color: #00ffff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #ff5722;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Specs Section */
+        .specs-section {
+            max-width: 1200px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .spec-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .spec-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .spec-card h3 {
+            color: #1a3a52;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .spec-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Features Section */
+        .features-section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #1a3a52;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #0096cc;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: #f0f8ff;
+            transform: translateX(10px);
+        }
+
+        .feature-card h3 {
+            color: #0096cc;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8f4f8 100%);
+            padding: 60px 20px;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid #0096cc;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card.featured {
+            border-top: 4px solid #ff6b35;
+            transform: scale(1.05);
+        }
+
+        .pricing-card h3 {
+            color: #1a3a52;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 42px;
+            color: #ff6b35;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-currency {
+            font-size: 20px;
+            vertical-align: super;
+        }
+
+        .price-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            min-height: 40px;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .price-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .price-features li:before {
+            content: "✓ ";
+            color: #0096cc;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .price-button {
+            background: #0096cc;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .price-button:hover {
+            background: #005a8d;
+        }
+
+        .pricing-card.featured .price-button {
+            background: #ff6b35;
+        }
+
+        .pricing-card.featured .price-button:hover {
+            background: #ff5722;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            padding: 60px 20px;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #1a3a52;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0096cc;
+            box-shadow: 0 0 5px rgba(0, 150, 204, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-submit {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #ff5722;
+            transform: translateY(-3px);
+        }
+
+        /* Messages */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .error-message {
+            display: none;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a3a52;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            color: #00c8ff;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="SaFe Millennium Logo" class="logo-img">
+                <div class="brand-name">SaFe Millennium</div>
+            </div>
+            <div class="header-contact">
+                <a href="#contact">Contattaci</a>
+                <a href="mailto:safemillennium23@gmail.com">📧 safemillennium23@gmail.com</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>PRESSATRICE 1525 SLIM</h1>
+                <p>La soluzione professionale per impianti standard. Velocità, compattezza e potenza in un unico strumento.</p>
+                
+                <div class="hero-highlight">
+                    <strong>✓ Pressa in 3-5 secondi</strong><br>
+                    <strong>✓ Peso: soli 2,5 kg</strong><br>
+                    <strong>✓ Potenza: 25kN (2,5 tonnellate)</strong>
+                </div>
+
+                <p style="font-size: 16px; margin-top: 20px;">Ideale per professionisti che cercano efficienza e affidabilità. Garanzia 2 anni o 15.000 pressature.</p>
+
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Richiedi Informazioni Ora
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <img src="pressatrice.jpg" alt="PRESSATRICE 1525 SLIM">
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <div class="specs-grid">
+            <div class="spec-card">
+                <div class="spec-icon">⚡</div>
+                <h3>Velocità</h3>
+                <p>3-5 secondi per pressatura</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-icon">📦</div>
+                <h3>Compatta</h3>
+                <p>Solo 2,5 kg di peso</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-icon">💪</div>
+                <h3>Potente</h3>
+                <p>25kN di potenza</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-icon">🔄</div>
+                <h3>Versatile</h3>
+                <p>Matrice universale SLIM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <h2 class="section-title">Caratteristiche Principali</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎯 Precisione Garantita</h3>
+                    <p>25kN di potenza costante per pressature sicure e precise su rame, acciaio e multistrato.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔄 Matrice Universale SLIM</h3>
+                    <p>Ruota a 300° per adattarsi a ogni esigenza. Compatibile con V (15, 18, 22, 28) e TH (16, 20, 26, 32).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔋 Batterie Incluse</h3>
+                    <p>2 Batterie 18V 5Ah incluse nel pacchetto. Autonomia totale per lavori continui.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛡️ Garanzia Affidabile</h3>
+                    <p>2 anni di garanzia o 15.000 pressature. Assistenza tecnica disponibile.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📏 Compatta e Leggera</h3>
+                    <p>Solo 2,5 kg. Ideale per lavori in spazi ristretti e facile da trasportare.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚙️ Tecnologia Affidabile</h3>
+                    <p>Costruzione robusta e duratura. Perfetta per professionisti che non scendono a compromessi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-container">
+            <h2 class="section-title">Scegli il Tuo Pacchetto</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Solo Rame/Acciaio V</h3>
+                    <p class="price-description">Perfetto per specialisti</p>
+                    <div class="price"><span class="price-currency">€</span>670</div>
+                    <ul class="price-features">
+                        <li>Pressatrice 1525 SLIM</li>
+                        <li>2 Batterie 18V 5Ah</li>
+                        <li>Caricabatterie</li>
+                        <li>Matrici V (15, 18, 22, 28)</li>
+                    </ul>
+                    <button class="price-button" onclick="selectPackage('Solo Rame/Acciaio V - €670'); document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Scegli Questo</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>🌟 Pacchetto Completo</h3>
+                    <p class="price-description">La scelta più popolare</p>
+                    <div class="price"><span class="price-currency">€</span>750</div>
+                    <ul class="price-features">
+                        <li>Pressatrice 1525 SLIM</li>
+                        <li>2 Batterie 18V 5Ah</li>
+                        <li>Caricabatterie</li>
+                        <li>Matrici V e TH</li>
+                        <li>Garanzia 2 anni</li>
+                    </ul>
+                    <button class="price-button" onclick="selectPackage('Pacchetto Completo - €750'); document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Scegli Questo</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Solo Multistrato TH</h3>
+                    <p class="price-description">Per professionisti</p>
+                    <div class="price"><span class="price-currency">€</span>670</div>
+                    <ul class="price-features">
+                        <li>Pressatrice 1525 SLIM</li>
+                        <li>2 Batterie 18V 5Ah</li>
+                        <li>Caricabatterie</li>
+                        <li>Matrici TH (16, 20, 26, 32)</li>
+                    </ul>
+                    <button class="price-button" onclick="selectPackage('Solo Multistrato TH - €670'); document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Scegli Questo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Richiedi Informazioni</h2>
+            
+            <div class="success-message" id="successMessage">
+                ✓ Grazie! La tua richiesta è stata inviata con successo. Ti contatteremo presto a safemillennium23@gmail.com
+            </div>
+            <div class="error-message" id="errorMessage">
+                ✗ Si è verificato un errore. Per favore riprova.
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nameOrCompany">Nome / Cognome o Ragione Sociale *</label>
+                    <input type="text" id="nameOrCompany" name="nameOrCompany" placeholder="Es. Mario Rossi o Rossi S.r.l." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Indirizzo *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Recapito Telefonico *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Domande o Note</label>
+                    <textarea id="message" name="message" placeholder="Scrivi qui le tue domande o note..."></textarea>
+                </div>
+
+                <input type="hidden" id="selectedPackage" name="selectedPackage" value="">
+
+                <button type="submit" class="form-submit">Invia Richiesta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 SaFe Millennium - Vendita Elettroutensili Professionali</p>
+            <p>📧 Email: <a href="mailto:safemillennium23@gmail.com">safemillennium23@gmail.com</a></p>
+            <p>Contattaci per informazioni, preventivi e assistenza tecnica.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funzione per selezionare il pacchetto
+        function selectPackage(packageName) {
+            document.getElementById('selectedPackage').value = packageName;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                nameOrCompany: document.getElementById('nameOrCompany').value,
+                address: document.getElementById('address').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value,
+                selectedPackage: document.getElementById('selectedPackage').value || 'Non specificato'
+            };
+
+            // Invia i dati al server
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const successMessage = document.getElementById('successMessage');
+                    successMessage.classList.add('show');
+                    document.getElementById('contactForm').reset();
+                    
+                    // Apri WhatsApp con il messaggio precompilato dopo 1 secondo
+                    setTimeout(() => {
+                        window.open(data.whatsappLink, '_blank');
+                    }, 1000);
+                    
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                } else {
+                    throw new Error('Errore nella risposta del server');
+                }
+            })
+            .catch(error => {
+                console.error('Errore:', error);
+                const errorMessage = document.getElementById('errorMessage');
+                errorMessage.classList.add('show');
+                
+                setTimeout(() => {
+                    errorMessage.classList.remove('show');
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
+
